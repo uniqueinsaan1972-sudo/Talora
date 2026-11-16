@@ -1,0 +1,1 @@
+{ "expo": { "name": "TALORA", "slug": "talora", "version": "0.1.0", "icon": "./assets/icon.png", "android": { "package": "com.talora.app" } } }

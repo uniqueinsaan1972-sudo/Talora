@@ -1,0 +1,26 @@
+{"unit":"a1-u1","tests":[
+{"id":"a1-u1-t1","title":"Test 1: goes to school","xp":10,"questions":[
+{"id":"a1-u1-t1-q1","type":"mcq","topic":"Present simple: goes","prompt":"Dagoruna ___ to school.","options":["go","goes","going"],"answers":["goes"]},
+{"id":"a1-u1-t1-q2","type":"fill","topic":"Present simple: goes","prompt":"She ___ to college. (go)","answers":["goes"]},
+{"id":"a1-u1-t1-q3","type":"mcq","topic":"Parts of a sentence","prompt":"Which word is the verb in “Ali goes to school”?","options":["Ali","goes","school"],"answers":["goes"]},
+{"id":"a1-u1-t1-q4","type":"arrange","topic":"Sentence order","prompt":"Make a sentence.","words":["to","goes","school","Dagoruna"],"answers":["Dagoruna goes to school"]},
+{"id":"a1-u1-t1-q5","type":"mcq","topic":"Present simple: goes","prompt":"Which sentence is correct?","options":["My brother go to work.","My brother goes to work."],"answers":["My brother goes to work."]}]},
+{"id":"a1-u1-t2","title":"Test 2: is sleeping","xp":10,"questions":[
+{"id":"a1-u1-t2-q1","type":"mcq","topic":"am / is / are + verb-ing","prompt":"Dagoruna ___ sleeping.","options":["am","is","are"],"answers":["is"]},
+{"id":"a1-u1-t2-q2","type":"fill","topic":"am / is / are + verb-ing","prompt":"I ___ studying. (am / is / are)","answers":["am"]},
+{"id":"a1-u1-t2-q3","type":"mcq","topic":"am / is / are + verb-ing","prompt":"They ___ playing.","options":["is","am","are"],"answers":["are"]},
+{"id":"a1-u1-t2-q4","type":"arrange","topic":"Sentence order","prompt":"Make a sentence.","words":["is","cooking","She"],"answers":["She is cooking"]},
+{"id":"a1-u1-t2-q5","type":"fill","topic":"am / is / are + verb-ing","prompt":"Ali ___ writing a letter. (am / is / are)","answers":["is"]}]},
+{"id":"a1-u1-t3","title":"Test 3: mixed","xp":10,"questions":[
+{"id":"a1-u1-t3-q1","type":"mcq","topic":"Present simple: goes","prompt":"My brother ___ to work.","options":["go","goes"],"answers":["goes"]},
+{"id":"a1-u1-t3-q2","type":"fill","topic":"am / is / are + verb-ing","prompt":"We ___ learning English. (am / is / are)","answers":["are"]},
+{"id":"a1-u1-t3-q3","type":"mcq","topic":"Present simple: goes","prompt":"Which sentence is correct?","options":["He go to school.","He goes to school.","He going to school."],"answers":["He goes to school."]},
+{"id":"a1-u1-t3-q4","type":"fill","topic":"am / is / are + verb-ing","prompt":"Dagoruna is ___ a book. (read)","answers":["reading"]},
+{"id":"a1-u1-t3-q5","type":"mcq","topic":"Parts of a sentence","prompt":"In “Dagoruna is sleeping”, what is “sleeping”?","options":["Subject","Helping verb","Main verb"],"answers":["Main verb"]}]},
+{"id":"a1-u1-mega","title":"Mega Test","kind":"mega","xp":30,"requires":["a1-u1-t1","a1-u1-t2","a1-u1-t3"],"questions":[
+{"id":"a1-u1-mega-q1","type":"mcq","topic":"am / is / are + verb-ing","prompt":"“Main parh raha hoon.” means:","options":["I am studying.","I studying am.","I is studying."],"answers":["I am studying."]},
+{"id":"a1-u1-mega-q2","type":"mcq","topic":"Present simple: goes","prompt":"“Dagoruna school jata hai.” means:","options":["Dagoruna go to school.","Dagoruna goes to school.","Dagoruna is school."],"answers":["Dagoruna goes to school."]},
+{"id":"a1-u1-mega-q3","type":"fill","topic":"Present simple: goes","prompt":"Ali ___ to work. (go)","answers":["goes"]},
+{"id":"a1-u1-mega-q4","type":"fill","topic":"am / is / are + verb-ing","prompt":"She ___ cooking now. (am / is / are)","answers":["is"]},
+{"id":"a1-u1-mega-q5","type":"arrange","topic":"Sentence order","prompt":"Make a sentence.","words":["is","He","sleeping"],"answers":["He is sleeping"]},
+{"id":"a1-u1-mega-q6","type":"mcq","topic":"am / is / are + verb-ing","prompt":"Which sentence means it is happening now?","options":["She runs to school.","She is running.","She will run."],"answers":["She is running."]}]}]}

@@ -1,0 +1,13 @@
+{ "_note": "DEVELOPMENT SEED. Urdu/Hindi text must be reviewed by a native speaker before publishing.",
+  "unit": "A0 Greetings and Basics",
+  "words": [
+    {"en":"hello","roman_urdu":"salaam","urdu":"سلام","hindi":"नमस्ते","example":"Hello, my name is Ali."},
+    {"en":"thank you","roman_urdu":"shukriya","urdu":"شکریہ","hindi":"धन्यवाद","example":"Thank you for your help."},
+    {"en":"good morning","roman_urdu":"subah bakhair","urdu":"صبح بخیر","hindi":"सुप्रभात","example":"Good morning, teacher."},
+    {"en":"friend","roman_urdu":"dost","urdu":"دوست","hindi":"दोस्त","example":"She is my friend."},
+    {"en":"water","roman_urdu":"pani","urdu":"پانی","hindi":"पानी","example":"I drink water."},
+    {"en":"book","roman_urdu":"kitab","urdu":"کتاب","hindi":"किताब","example":"This is my book."},
+    {"en":"mother","roman_urdu":"maa","urdu":"ماں","hindi":"माँ","example":"My mother is kind."},
+    {"en":"red","roman_urdu":"laal","urdu":"لال","hindi":"लाल","example":"The apple is red."},
+    {"en":"blue","roman_urdu":"neela","urdu":"نیلا","hindi":"नीला","example":"The sky is blue."}
+  ] }

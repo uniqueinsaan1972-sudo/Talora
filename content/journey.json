@@ -1,0 +1,94 @@
+{
+ "levels": [
+  {
+   "level": "A1",
+   "title": "Beginner",
+   "units": [
+    {
+     "title": "Hello, Dagoruna! (goes to school, is sleeping)",
+     "status": "available"
+    },
+    {
+     "title": "Introduce yourself",
+     "status": "planned"
+    },
+    {
+     "title": "Family and daily routine (Present Simple, Present Continuous)",
+     "status": "planned"
+    }
+   ]
+  },
+  {
+   "level": "A2",
+   "title": "Elementary",
+   "units": [
+    {
+     "title": "School and college conversations",
+     "status": "planned"
+    },
+    {
+     "title": "Past experiences (Past Simple, Past Continuous)",
+     "status": "planned"
+    },
+    {
+     "title": "Future plans (Future Simple, going to)",
+     "status": "planned"
+    }
+   ]
+  },
+  {
+   "level": "B1",
+   "title": "Intermediate",
+   "units": [
+    {
+     "title": "Real-life conversations",
+     "status": "planned"
+    },
+    {
+     "title": "Present Perfect, Present Perfect Continuous",
+     "status": "planned"
+    },
+    {
+     "title": "Future Continuous, opinions",
+     "status": "planned"
+    }
+   ]
+  },
+  {
+   "level": "B2",
+   "title": "Upper intermediate",
+   "units": [
+    {
+     "title": "Past Perfect, Past Perfect Continuous",
+     "status": "planned"
+    },
+    {
+     "title": "Future Perfect, professional vocabulary",
+     "status": "planned"
+    },
+    {
+     "title": "Emails and discussions",
+     "status": "planned"
+    }
+   ]
+  },
+  {
+   "level": "C1",
+   "title": "Advanced",
+   "units": [
+    {
+     "title": "Future Perfect Continuous, advanced structures",
+     "status": "planned"
+    },
+    {
+     "title": "Interviews and presentations",
+     "status": "planned"
+    },
+    {
+     "title": "Natural English and common mistakes",
+     "status": "planned"
+    }
+   ]
+  }
+ ]
+}
