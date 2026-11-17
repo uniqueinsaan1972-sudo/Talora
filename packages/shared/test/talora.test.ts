@@ -28,3 +28,10 @@ describe("sentence checks", () => {
   it("goes rule", () => { expect(checkGoes("Ali goes to school.").ok).toBe(true); expect(checkGoes("Ali go to school.").msg).toContain("goes"); expect(checkGoes("I goes to school.").ok).toBe(false); expect(checkGoes("ali goes to school.").ok).toBe(false); });
   it("is + verb-ing rule", () => { expect(checkContinuous("She is cooking.").ok).toBe(true); expect(checkContinuous("I is studying.").msg).toContain("am"); expect(checkContinuous("They are play.").ok).toBe(false); });
 });
+import { checkPast, checkPerfect, checkPastPerfect, checkFuturePerfect } from "../src";
+describe("A2-C1 sentence checks", () => {
+  it("past simple", () => { expect(checkPast("I watched a film last night.").ok).toBe(true); expect(checkPast("She went to the market.").ok).toBe(true); expect(checkPast("I watch a film today.").ok).toBe(false); });
+  it("present perfect", () => { expect(checkPerfect("She has never visited London.").ok).toBe(true); expect(checkPerfect("I have already finished my work.").ok).toBe(true); expect(checkPerfect("She have finished.").msg).toContain("has"); expect(checkPerfect("I have go home.").ok).toBe(false); });
+  it("past perfect", () => { expect(checkPastPerfect("She had already left when I called.").ok).toBe(true); expect(checkPastPerfect("She has left before.").ok).toBe(false); });
+  it("future perfect", () => { expect(checkFuturePerfect("By Friday, we will have sent the report.").ok).toBe(true); expect(checkFuturePerfect("They will have signed the contract.").ok).toBe(true); expect(checkFuturePerfect("We will finish by Friday.").ok).toBe(false); expect(checkFuturePerfect("We will have finish it.").ok).toBe(false); });
+});

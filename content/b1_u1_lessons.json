@@ -1,0 +1,85 @@
+{
+ "_note": "Urdu and Hindi are drafts: native-speaker review needed.",
+ "unit": "b1-u1",
+ "title": "Homework Done!",
+ "lessons": [
+  {
+   "id": "b1-u1-l1",
+   "title": "Dagoruna Has Finished His Homework",
+   "pose": "happy",
+   "sentence": "Dagoruna has finished his homework.",
+   "tr": {
+    "roman_urdu": "Dagoruna ne apna homework khatam kar liya hai.",
+    "urdu": "ڈیگورونا نے اپنا ہوم ورک ختم کر لیا ہے۔",
+    "hindi": "डेगोरुना ने अपना होमवर्क खत्म कर लिया है।"
+   },
+   "parts": [
+    {
+     "w": "Dagoruna",
+     "r": {
+      "roman_urdu": "Subject (kaam karne wala)",
+      "urdu": "Subject (کام کرنے والا)",
+      "hindi": "Subject (काम करने वाला)"
+     }
+    },
+    {
+     "w": "has",
+     "r": {
+      "roman_urdu": "Helping verb",
+      "urdu": "Helping verb",
+      "hindi": "Helping verb"
+     }
+    },
+    {
+     "w": "finished",
+     "r": {
+      "roman_urdu": "Past participle (verb ka teesra form)",
+      "urdu": "Past participle (verb کی تیسری شکل)",
+      "hindi": "Past participle (verb का तीसरा रूप)"
+     }
+    },
+    {
+     "w": "his homework",
+     "r": {
+      "roman_urdu": "Object (cheez)",
+      "urdu": "Object (چیز)",
+      "hindi": "Object (चीज़)"
+     }
+    }
+   ],
+   "why": {
+    "roman_urdu": "Present perfect (have/has + past participle) tab use hota hai jab guzra hua kaam ab bhi hamare liye ahem ho, ya jab waqt bataya na gaya ho. I/you/we/they ke saath have, he/she/it/naam ke saath has aata hai. Ye words aksar saath aate hain: for, since, already, never, ever, just.",
+    "urdu": "Present perfect (have/has + past participle) تب استعمال ہوتا ہے جب گزرا ہوا کام اب بھی ہمارے لیے اہم ہو، یا جب وقت نہ بتایا گیا ہو۔ I/you/we/they کے ساتھ have اور he/she/it/نام کے ساتھ has آتا ہے۔ یہ الفاظ اکثر ساتھ آتے ہیں: for، since، already، never، ever، just۔",
+    "hindi": "Present perfect (have/has + past participle) तब इस्तेमाल होता है जब बीता हुआ काम अब भी हमारे लिए अहम हो, या जब समय न बताया गया हो। I/you/we/they के साथ have और he/she/it/नाम के साथ has आता है। ये शब्द अक्सर साथ आते हैं: for, since, already, never, ever, just।"
+   },
+   "examples": [
+    {
+     "en": "I have lived here for five years.",
+     "tr": {
+      "roman_urdu": "Main yahan paanch saal se reh raha hoon.",
+      "urdu": "میں یہاں پانچ سال سے رہ رہا ہوں۔",
+      "hindi": "मैं यहाँ पाँच साल से रह रहा हूँ।"
+     }
+    },
+    {
+     "en": "She has never visited London.",
+     "tr": {
+      "roman_urdu": "Wo kabhi London nahi gayi.",
+      "urdu": "وہ کبھی لندن نہیں گئی۔",
+      "hindi": "वह कभी लंदन नहीं गई।"
+     }
+    },
+    {
+     "en": "We have already eaten.",
+     "tr": {
+      "roman_urdu": "Hum pehle hi kha chuke hain.",
+      "urdu": "ہم پہلے ہی کھا چکے ہیں۔",
+      "hindi": "हम पहले ही खा चुके हैं।"
+     }
+    }
+   ],
+   "practice": "perfect",
+   "prompt": "Now write your own sentence, for example: I have already finished my work."
+  }
+ ]
+}

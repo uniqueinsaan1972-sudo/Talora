@@ -1,0 +1,93 @@
+{
+ "_note": "Urdu and Hindi are drafts: native-speaker review needed.",
+ "unit": "c1-u1",
+ "title": "Goals and Deadlines",
+ "lessons": [
+  {
+   "id": "c1-u1-l1",
+   "title": "Dagoruna Will Have Completed the Course",
+   "pose": "reading",
+   "sentence": "By next June, Dagoruna will have completed the course.",
+   "tr": {
+    "roman_urdu": "Agle June tak Dagoruna course mukammal kar chuka hoga.",
+    "urdu": "اگلے جون تک ڈیگورونا کورس مکمل کر چکا ہوگا۔",
+    "hindi": "अगले जून तक डेगोरुना कोर्स पूरा कर चुका होगा।"
+   },
+   "parts": [
+    {
+     "w": "By next June",
+     "r": {
+      "roman_urdu": "Waqt",
+      "urdu": "وقت",
+      "hindi": "समय"
+     }
+    },
+    {
+     "w": "Dagoruna",
+     "r": {
+      "roman_urdu": "Subject (kaam karne wala)",
+      "urdu": "Subject (کام کرنے والا)",
+      "hindi": "Subject (काम करने वाला)"
+     }
+    },
+    {
+     "w": "will have",
+     "r": {
+      "roman_urdu": "Helping verbs (will have)",
+      "urdu": "Helping verbs (will have)",
+      "hindi": "Helping verbs (will have)"
+     }
+    },
+    {
+     "w": "completed",
+     "r": {
+      "roman_urdu": "Past participle (verb ka teesra form)",
+      "urdu": "Past participle (verb کی تیسری شکل)",
+      "hindi": "Past participle (verb का तीसरा रूप)"
+     }
+    },
+    {
+     "w": "the course",
+     "r": {
+      "roman_urdu": "Object (cheez)",
+      "urdu": "Object (چیز)",
+      "hindi": "Object (चीज़)"
+     }
+    }
+   ],
+   "why": {
+    "roman_urdu": "Future perfect (will have + past participle) us kaam ke liye hai jo kisi muqarrar future waqt se pehle mukammal ho chuka hoga. Ye aksar by + waqt ke saath aata hai (by Friday, by 2030) aur daftar ki baat cheet mein targets aur deadlines ke liye aam hai. Will have sab ke saath same rehta hai.",
+    "urdu": "Future perfect (will have + past participle) اس کام کے لیے ہے جو کسی مقررہ مستقبل کے وقت سے پہلے مکمل ہو چکا ہوگا۔ یہ اکثر by + وقت کے ساتھ آتا ہے (by Friday، by 2030) اور دفتر کی بات چیت میں ٹارگٹس اور ڈیڈ لائنز کے لیے عام ہے۔ Will have سب کے ساتھ ایک جیسا رہتا ہے۔",
+    "hindi": "Future perfect (will have + past participle) उस काम के लिए है जो किसी तय भविष्य के समय से पहले पूरा हो चुका होगा। यह अक्सर by + समय के साथ आता है (by Friday, by 2030) और दफ़्तर की बातचीत में टारगेट और डेडलाइन के लिए आम है। Will have सब के साथ एक जैसा रहता है।"
+   },
+   "examples": [
+    {
+     "en": "By 2030, I will have finished my degree.",
+     "tr": {
+      "roman_urdu": "2030 tak main apni degree mukammal kar chuka hounga.",
+      "urdu": "۲۰۳۰ تک میں اپنی ڈگری مکمل کر چکا ہوں گا۔",
+      "hindi": "2030 तक मैं अपनी डिग्री पूरी कर चुका होऊँगा।"
+     }
+    },
+    {
+     "en": "She will have left by the time you arrive.",
+     "tr": {
+      "roman_urdu": "Jab tak aap pahunchein gay wo ja chuki hogi.",
+      "urdu": "جب تک آپ پہنچیں گے وہ جا چکی ہوگی۔",
+      "hindi": "जब तक आप पहुँचेंगे वह जा चुकी होगी।"
+     }
+    },
+    {
+     "en": "They will have signed the contract before Friday.",
+     "tr": {
+      "roman_urdu": "Wo Jumay se pehle contract par dastkhat kar chuke honge.",
+      "urdu": "وہ جمعے سے پہلے معاہدے پر دستخط کر چکے ہوں گے۔",
+      "hindi": "वे शुक्रवार से पहले अनुबंध पर हस्ताक्षर कर चुके होंगे।"
+     }
+    }
+   ],
+   "practice": "futureperfect",
+   "prompt": "Now write your own sentence, for example: By Friday, we will have sent the report."
+  }
+ ]
+}

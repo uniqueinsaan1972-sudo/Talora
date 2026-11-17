@@ -24,3 +24,11 @@ Art: poses are crops from the original sheet (not transparent, low resolution). 
 Tests: the answers for wrong questions are shown after a graded attempt, so retaking the same questions can be memorised (question rotation is future work). Lessons must be completed before tests only in the interface; the database enforces the Test 1-3 then Mega order. No instant right/wrong flash per question inside graded tests because the answers are only on the server.
 Sentence checker: simple rules (capital, full stop, -s/-es, am/is/are + -ing), not full grammar analysis.
 Mobile app is unchanged (vocabulary list only). The signup profile is still created on first dashboard visit.
+
+## v0.4.0 status (honest)
+Levels A1-C1 now each have ONE unit (1 lesson, 3 tests, 1 Mega Test). That is a thin first pass, not a full course: real A2-C1 levels need many more units.
+Tenses taught so far: Present Simple (3rd person) and Present Continuous (A1), Past Simple (A2), Present Perfect (B1), Past Perfect (B2), Future Perfect (C1) = 5 of the 12. Still planned: Present Perfect Continuous, Past Continuous, Past Perfect Continuous, Future Simple, Future Continuous, Future Perfect Continuous, plus can/could/should/would, will vs going to, do/does/did drills.
+Level locking is enforced by the database only for tests (Test 1 needs the previous Mega); lesson pages are locked in the interface only.
+Level C1 content is mainly grammar with a few workplace examples; the real professional English units (emails, interviews, presentations) are not built.
+Urdu and Hindi text in A2-C1 are drafts needing native review. Test questions were checked for answer consistency by script, but have not been reviewed by an English teacher.
+The congratulations screen is not an official certificate.

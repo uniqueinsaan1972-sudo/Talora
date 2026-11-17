@@ -1,0 +1,313 @@
+{
+ "unit": "c1-u1",
+ "tests": [
+  {
+   "id": "c1-u1-t1",
+   "title": "Test 1: will have + past participle",
+   "xp": 10,
+   "questions": [
+    {
+     "id": "c1-u1-t1-q1",
+     "topic": "will have + past participle",
+     "type": "mcq",
+     "prompt": "By next June, Dagoruna ___ the course.",
+     "options": [
+      "will complete",
+      "will have completed",
+      "completes"
+     ],
+     "answers": [
+      "will have completed"
+     ]
+    },
+    {
+     "id": "c1-u1-t1-q2",
+     "topic": "will have + past participle",
+     "type": "fill",
+     "prompt": "By 2030, I ___ finished my degree. (will have / will)",
+     "answers": [
+      "will have"
+     ]
+    },
+    {
+     "id": "c1-u1-t1-q3",
+     "topic": "will have + past participle",
+     "type": "mcq",
+     "prompt": "Past participle of “submit”?",
+     "options": [
+      "submitted",
+      "submit",
+      "submitting"
+     ],
+     "answers": [
+      "submitted"
+     ]
+    },
+    {
+     "id": "c1-u1-t1-q4",
+     "topic": "will have + past participle",
+     "type": "arrange",
+     "prompt": "Make a sentence.",
+     "words": [
+      "will",
+      "She",
+      "have",
+      "left"
+     ],
+     "answers": [
+      "She will have left"
+     ]
+    },
+    {
+     "id": "c1-u1-t1-q5",
+     "topic": "will have + past participle",
+     "type": "mcq",
+     "prompt": "They ___ the contract before Friday.",
+     "options": [
+      "will have signed",
+      "sign",
+      "signed"
+     ],
+     "answers": [
+      "will have signed"
+     ]
+    }
+   ],
+   "requires": [
+    "b2-u1-mega"
+   ]
+  },
+  {
+   "id": "c1-u1-t2",
+   "title": "Test 2: by + time",
+   "xp": 10,
+   "questions": [
+    {
+     "id": "c1-u1-t2-q1",
+     "topic": "By + time",
+     "type": "mcq",
+     "prompt": "We ___ the report by 5 pm.",
+     "options": [
+      "will have finished",
+      "finished",
+      "are finishing"
+     ],
+     "answers": [
+      "will have finished"
+     ]
+    },
+    {
+     "id": "c1-u1-t2-q2",
+     "topic": "By + time",
+     "type": "mcq",
+     "prompt": "Which word often goes with the future perfect?",
+     "options": [
+      "by",
+      "ago",
+      "yesterday"
+     ],
+     "answers": [
+      "by"
+     ]
+    },
+    {
+     "id": "c1-u1-t2-q3",
+     "topic": "By + time",
+     "type": "fill",
+     "prompt": "By the time you arrive, I ___ cooked dinner. (will have / have)",
+     "answers": [
+      "will have"
+     ]
+    },
+    {
+     "id": "c1-u1-t2-q4",
+     "topic": "By + time",
+     "type": "mcq",
+     "prompt": "By next year, he ___ here for ten years.",
+     "options": [
+      "will work",
+      "will have worked",
+      "works"
+     ],
+     "answers": [
+      "will have worked"
+     ]
+    },
+    {
+     "id": "c1-u1-t2-q5",
+     "topic": "By + time",
+     "type": "fill",
+     "prompt": "She will have ___ before you come. (leave)",
+     "answers": [
+      "left"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c1-u1-t3",
+   "title": "Test 3: professional English",
+   "xp": 10,
+   "questions": [
+    {
+     "id": "c1-u1-t3-q1",
+     "topic": "Future perfect at work",
+     "type": "mcq",
+     "prompt": "By the end of the quarter, the team ___ all its targets.",
+     "options": [
+      "will have met",
+      "met",
+      "meets"
+     ],
+     "answers": [
+      "will have met"
+     ]
+    },
+    {
+     "id": "c1-u1-t3-q2",
+     "topic": "Future perfect at work",
+     "type": "mcq",
+     "prompt": "Which sentence is correct?",
+     "options": [
+      "The manager will has approved it.",
+      "The manager will have approved it."
+     ],
+     "answers": [
+      "The manager will have approved it."
+     ]
+    },
+    {
+     "id": "c1-u1-t3-q3",
+     "topic": "Future perfect at work",
+     "type": "fill",
+     "prompt": "By Monday, we ___ sent all invoices. (will have / has)",
+     "answers": [
+      "will have"
+     ]
+    },
+    {
+     "id": "c1-u1-t3-q4",
+     "topic": "Future perfect at work",
+     "type": "mcq",
+     "prompt": "By the time the meeting starts, I ___ the slides.",
+     "options": [
+      "will prepare",
+      "will have prepared",
+      "prepared"
+     ],
+     "answers": [
+      "will have prepared"
+     ]
+    },
+    {
+     "id": "c1-u1-t3-q5",
+     "topic": "Future perfect at work",
+     "type": "arrange",
+     "prompt": "Make a sentence.",
+     "words": [
+      "will",
+      "They",
+      "have",
+      "finished",
+      "by",
+      "noon"
+     ],
+     "answers": [
+      "They will have finished by noon",
+      "By noon they will have finished"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c1-u1-mega",
+   "title": "Mega Test",
+   "kind": "mega",
+   "xp": 30,
+   "requires": [
+    "c1-u1-t1",
+    "c1-u1-t2",
+    "c1-u1-t3"
+   ],
+   "questions": [
+    {
+     "id": "c1-u1-mega-q1",
+     "topic": "will have + past participle",
+     "type": "mcq",
+     "prompt": "“Agle June tak Dagoruna course mukammal kar chuka hoga.” means:",
+     "options": [
+      "By next June, Dagoruna will have completed the course.",
+      "Next June Dagoruna completes the course.",
+      "Dagoruna had completed the course next June."
+     ],
+     "answers": [
+      "By next June, Dagoruna will have completed the course."
+     ]
+    },
+    {
+     "id": "c1-u1-mega-q2",
+     "topic": "By + time",
+     "type": "fill",
+     "prompt": "By 5 pm, she ___ left the office. (will have / had)",
+     "answers": [
+      "will have"
+     ]
+    },
+    {
+     "id": "c1-u1-mega-q3",
+     "topic": "will have + past participle",
+     "type": "mcq",
+     "prompt": "Which is correct?",
+     "options": [
+      "We will have finish by Friday.",
+      "We will have finished by Friday."
+     ],
+     "answers": [
+      "We will have finished by Friday."
+     ]
+    },
+    {
+     "id": "c1-u1-mega-q4",
+     "topic": "Future perfect at work",
+     "type": "fill",
+     "prompt": "By next month, I will have ___ my report. (submit)",
+     "answers": [
+      "submitted"
+     ]
+    },
+    {
+     "id": "c1-u1-mega-q5",
+     "topic": "will have + past participle",
+     "type": "mcq",
+     "prompt": "Which tense is “will have + past participle”?",
+     "options": [
+      "Future Perfect",
+      "Future Simple",
+      "Past Perfect"
+     ],
+     "answers": [
+      "Future Perfect"
+     ]
+    },
+    {
+     "id": "c1-u1-mega-q6",
+     "topic": "By + time",
+     "type": "arrange",
+     "prompt": "Make a sentence.",
+     "words": [
+      "will",
+      "He",
+      "have",
+      "retired",
+      "by",
+      "2035"
+     ],
+     "answers": [
+      "He will have retired by 2035",
+      "By 2035 he will have retired"
+     ]
+    }
+   ]
+  }
+ ]
+}

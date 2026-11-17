@@ -6,7 +6,8 @@
    "units": [
     {
      "title": "Hello, Dagoruna! (goes to school, is sleeping)",
-     "status": "available"
+     "status": "available",
+     "id": "a1-u1"
     },
     {
      "title": "Introduce yourself",
@@ -23,8 +24,9 @@
    "title": "Elementary",
    "units": [
     {
-     "title": "School and college conversations",
-     "status": "planned"
+     "title": "Dagoruna's Yesterday (Past Simple)",
+     "status": "available",
+     "id": "a2-u1"
     },
     {
      "title": "Past experiences (Past Simple, Past Continuous)",
@@ -41,8 +43,9 @@
    "title": "Intermediate",
    "units": [
     {
-     "title": "Real-life conversations",
-     "status": "planned"
+     "title": "Homework Done! (Present Perfect)",
+     "status": "available",
+     "id": "b1-u1"
     },
     {
      "title": "Present Perfect, Present Perfect Continuous",
@@ -59,8 +62,9 @@
    "title": "Upper intermediate",
    "units": [
     {
-     "title": "Past Perfect, Past Perfect Continuous",
-     "status": "planned"
+     "title": "Before the Teacher Came (Past Perfect)",
+     "status": "available",
+     "id": "b2-u1"
     },
     {
      "title": "Future Perfect, professional vocabulary",
@@ -77,8 +81,9 @@
    "title": "Advanced",
    "units": [
     {
-     "title": "Future Perfect Continuous, advanced structures",
-     "status": "planned"
+     "title": "Goals and Deadlines (Future Perfect)",
+     "status": "available",
+     "id": "c1-u1"
     },
     {
      "title": "Interviews and presentations",

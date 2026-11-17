@@ -1,0 +1,306 @@
+{
+ "unit": "b2-u1",
+ "tests": [
+  {
+   "id": "b2-u1-t1",
+   "title": "Test 1: had + past participle",
+   "xp": 10,
+   "questions": [
+    {
+     "id": "b2-u1-t1-q1",
+     "topic": "had + past participle",
+     "type": "mcq",
+     "prompt": "Dagoruna ___ finished before the teacher arrived.",
+     "options": [
+      "has",
+      "had",
+      "have"
+     ],
+     "answers": [
+      "had"
+     ]
+    },
+    {
+     "id": "b2-u1-t1-q2",
+     "topic": "had + past participle",
+     "type": "fill",
+     "prompt": "She ___ already eaten when we arrived. (had / has)",
+     "answers": [
+      "had"
+     ]
+    },
+    {
+     "id": "b2-u1-t1-q3",
+     "topic": "had + past participle",
+     "type": "mcq",
+     "prompt": "Past participle of “leave”?",
+     "options": [
+      "left",
+      "leaved",
+      "leaving"
+     ],
+     "answers": [
+      "left"
+     ]
+    },
+    {
+     "id": "b2-u1-t1-q4",
+     "topic": "had + past participle",
+     "type": "arrange",
+     "prompt": "Make a sentence.",
+     "words": [
+      "had",
+      "He",
+      "left",
+      "already"
+     ],
+     "answers": [
+      "He had already left",
+      "He had left already"
+     ]
+    },
+    {
+     "id": "b2-u1-t1-q5",
+     "topic": "had + past participle",
+     "type": "mcq",
+     "prompt": "By the time I got there, the film ___.",
+     "options": [
+      "started",
+      "had started",
+      "has started"
+     ],
+     "answers": [
+      "had started"
+     ]
+    }
+   ],
+   "requires": [
+    "b1-u1-mega"
+   ]
+  },
+  {
+   "id": "b2-u1-t2",
+   "title": "Test 2: which happened first?",
+   "xp": 10,
+   "questions": [
+    {
+     "id": "b2-u1-t2-q1",
+     "topic": "Earlier vs later past events",
+     "type": "mcq",
+     "prompt": "When I reached the station, the train ___.",
+     "options": [
+      "left",
+      "had left",
+      "leaves"
+     ],
+     "answers": [
+      "had left"
+     ]
+    },
+    {
+     "id": "b2-u1-t2-q2",
+     "topic": "Earlier vs later past events",
+     "type": "mcq",
+     "prompt": "In “She had cooked before he came”, which happened first?",
+     "options": [
+      "She cooked",
+      "He came"
+     ],
+     "answers": [
+      "She cooked"
+     ]
+    },
+    {
+     "id": "b2-u1-t2-q3",
+     "topic": "Earlier vs later past events",
+     "type": "fill",
+     "prompt": "He said that he ___ seen the film. (had / has)",
+     "answers": [
+      "had"
+     ]
+    },
+    {
+     "id": "b2-u1-t2-q4",
+     "topic": "Earlier vs later past events",
+     "type": "mcq",
+     "prompt": "I was tired because I ___ all night.",
+     "options": [
+      "worked",
+      "had worked",
+      "work"
+     ],
+     "answers": [
+      "had worked"
+     ]
+    },
+    {
+     "id": "b2-u1-t2-q5",
+     "topic": "Earlier vs later past events",
+     "type": "fill",
+     "prompt": "After they ___ dinner, they watched TV. (had + eat)",
+     "answers": [
+      "had eaten",
+      "eaten"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b2-u1-t3",
+   "title": "Test 3: past perfect or past simple?",
+   "xp": 10,
+   "questions": [
+    {
+     "id": "b2-u1-t3-q1",
+     "topic": "Past perfect vs past simple",
+     "type": "mcq",
+     "prompt": "I ___ never seen snow before I moved to Canada.",
+     "options": [
+      "had",
+      "have",
+      "was"
+     ],
+     "answers": [
+      "had"
+     ]
+    },
+    {
+     "id": "b2-u1-t3-q2",
+     "topic": "Past perfect vs past simple",
+     "type": "mcq",
+     "prompt": "She ___ to the shop, then she came home.",
+     "options": [
+      "went",
+      "had gone"
+     ],
+     "answers": [
+      "went"
+     ]
+    },
+    {
+     "id": "b2-u1-t3-q3",
+     "topic": "Past perfect vs past simple",
+     "type": "fill",
+     "prompt": "He was nervous because he ___ never flown before. (had / has)",
+     "answers": [
+      "had"
+     ]
+    },
+    {
+     "id": "b2-u1-t3-q4",
+     "topic": "Past perfect vs past simple",
+     "type": "mcq",
+     "prompt": "Which is correct?",
+     "options": [
+      "They had arrive.",
+      "They had arrived."
+     ],
+     "answers": [
+      "They had arrived."
+     ]
+    },
+    {
+     "id": "b2-u1-t3-q5",
+     "topic": "Past perfect vs past simple",
+     "type": "mcq",
+     "prompt": "We were late. The meeting ___ already started.",
+     "options": [
+      "has",
+      "had",
+      "have"
+     ],
+     "answers": [
+      "had"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b2-u1-mega",
+   "title": "Mega Test",
+   "kind": "mega",
+   "xp": 30,
+   "requires": [
+    "b2-u1-t1",
+    "b2-u1-t2",
+    "b2-u1-t3"
+   ],
+   "questions": [
+    {
+     "id": "b2-u1-mega-q1",
+     "topic": "had + past participle",
+     "type": "mcq",
+     "prompt": "“Teacher ke aane se pehle Dagoruna kaam khatam kar chuka tha.” means:",
+     "options": [
+      "Dagoruna had finished before the teacher arrived.",
+      "Dagoruna has finished before the teacher arrives.",
+      "Dagoruna finishes before the teacher arrived."
+     ],
+     "answers": [
+      "Dagoruna had finished before the teacher arrived."
+     ]
+    },
+    {
+     "id": "b2-u1-mega-q2",
+     "topic": "had + past participle",
+     "type": "fill",
+     "prompt": "She ___ left before I called. (had / has)",
+     "answers": [
+      "had"
+     ]
+    },
+    {
+     "id": "b2-u1-mega-q3",
+     "topic": "had + past participle",
+     "type": "mcq",
+     "prompt": "Which is correct?",
+     "options": [
+      "He had went home.",
+      "He had gone home."
+     ],
+     "answers": [
+      "He had gone home."
+     ]
+    },
+    {
+     "id": "b2-u1-mega-q4",
+     "topic": "Earlier vs later past events",
+     "type": "fill",
+     "prompt": "They had ___ the work before noon. (finish)",
+     "answers": [
+      "finished"
+     ]
+    },
+    {
+     "id": "b2-u1-mega-q5",
+     "topic": "had + past participle",
+     "type": "arrange",
+     "prompt": "Make a sentence.",
+     "words": [
+      "had",
+      "I",
+      "eaten",
+      "already"
+     ],
+     "answers": [
+      "I had already eaten",
+      "I had eaten already"
+     ]
+    },
+    {
+     "id": "b2-u1-mega-q6",
+     "topic": "Earlier vs later past events",
+     "type": "mcq",
+     "prompt": "Which happened first? “I had paid before he asked.”",
+     "options": [
+      "I paid",
+      "He asked"
+     ],
+     "answers": [
+      "I paid"
+     ]
+    }
+   ]
+  }
+ ]
+}

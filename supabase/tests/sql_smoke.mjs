@@ -11,6 +11,10 @@ let r = await sub("a1-u1-t1", { ...all, "a1-u1-t1-q5": "wrong" }); console.log("
 r = await sub("a1-u1-t1", { "a1-u1-t1-q1": "go" }); console.log("OK  fail attempt passed:", r.passed, "xp:", r.xp);
 r = await sub("a1-u1-t1", all); console.log("OK  perfect passed:", r.passed, "xp:", r.xp);
 r = await sub("a1-u1-t1", all); console.log("OK  repeat pass xp:", r.xp, "(no double XP)");
+const keys = async t => Object.fromEntries((await db.query(`select question_id, min(answer) a from test_keys where test_id=$1 group by 1`, [t])).rows.map(r => [r.question_id, r.a]));
+try { await sub("a2-u1-t1", await keys("a2-u1-t1")); console.log("FAIL A2 should be locked"); } catch (e) { console.log("OK  A2 locked until A1 Mega passed:", e.message); }
+for (const t of ["a1-u1-t2", "a1-u1-t3", "a1-u1-mega"]) { const r = await sub(t, await keys(t)); console.log("OK ", t, "passed:", r.passed, "xp:", r.xp); }
+for (const u of ["a2", "b1", "b2", "c1"]) { for (const t of ["t1", "t2", "t3", "mega"]) { const r = await sub(`${u}-u1-${t}`, await keys(`${u}-u1-${t}`)); if (!r.passed) console.log("FAIL", u, t); } console.log("OK  all tests of", u, "pass with their own keys and unlock in order"); }
 const xp = (await db.query(`select coalesce(sum(amount),0)::int s from xp_transactions`)).rows[0].s; console.log("OK  total XP:", xp);
 try { await db.query(`select award_xp('x','y',50)`); console.log("note: award_xp callable by superuser here (expected in pglite)"); } catch (e) {}
 await db.exec(`set role authenticated`); try { await db.query(`select award_xp('x','forged',50)`); console.log("FAIL client can call award_xp"); } catch (e) { console.log("OK  client cannot call award_xp directly"); }

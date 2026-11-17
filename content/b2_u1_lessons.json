@@ -1,0 +1,85 @@
+{
+ "_note": "Urdu and Hindi are drafts: native-speaker review needed.",
+ "unit": "b2-u1",
+ "title": "Before the Teacher Came",
+ "lessons": [
+  {
+   "id": "b2-u1-l1",
+   "title": "Dagoruna Had Already Finished",
+   "pose": "thinking",
+   "sentence": "Dagoruna had finished before the teacher arrived.",
+   "tr": {
+    "roman_urdu": "Teacher ke aane se pehle Dagoruna kaam khatam kar chuka tha.",
+    "urdu": "استاد کے آنے سے پہلے ڈیگورونا کام ختم کر چکا تھا۔",
+    "hindi": "शिक्षक के आने से पहले डेगोरुना काम खत्म कर चुका था।"
+   },
+   "parts": [
+    {
+     "w": "Dagoruna",
+     "r": {
+      "roman_urdu": "Subject (kaam karne wala)",
+      "urdu": "Subject (کام کرنے والا)",
+      "hindi": "Subject (काम करने वाला)"
+     }
+    },
+    {
+     "w": "had",
+     "r": {
+      "roman_urdu": "Helping verb",
+      "urdu": "Helping verb",
+      "hindi": "Helping verb"
+     }
+    },
+    {
+     "w": "finished",
+     "r": {
+      "roman_urdu": "Past participle (verb ka teesra form)",
+      "urdu": "Past participle (verb کی تیسری شکل)",
+      "hindi": "Past participle (verb का तीसरा रूप)"
+     }
+    },
+    {
+     "w": "before the teacher arrived",
+     "r": {
+      "roman_urdu": "Baad mein hone wala kaam (simple past)",
+      "urdu": "بعد میں ہونے والا کام (simple past)",
+      "hindi": "बाद में होने वाला काम (simple past)"
+     }
+    }
+   ],
+   "why": {
+    "roman_urdu": "Past perfect (had + past participle) do guzre hue kaamon mein se pehle hone wale kaam ke liye use hota hai. Baad wala kaam simple past mein hota hai. Is mein had sab ke saath aata hai (I had, she had, they had).",
+    "urdu": "Past perfect (had + past participle) دو گزرے ہوئے کاموں میں سے پہلے ہونے والے کام کے لیے استعمال ہوتا ہے۔ بعد والا کام simple past میں ہوتا ہے۔ اس میں had سب کے ساتھ آتا ہے (I had، she had، they had)۔",
+    "hindi": "Past perfect (had + past participle) दो बीते हुए कामों में से पहले होने वाले काम के लिए इस्तेमाल होता है। बाद वाला काम simple past में होता है। इसमें had सब के साथ आता है (I had, she had, they had)।"
+   },
+   "examples": [
+    {
+     "en": "When I reached the station, the train had left.",
+     "tr": {
+      "roman_urdu": "Jab main station pahuncha, train ja chuki thi.",
+      "urdu": "جب میں اسٹیشن پہنچا تو ٹرین جا چکی تھی۔",
+      "hindi": "जब मैं स्टेशन पहुँचा, तो ट्रेन जा चुकी थी।"
+     }
+    },
+    {
+     "en": "She had already eaten when we arrived.",
+     "tr": {
+      "roman_urdu": "Hamare pahunchne se pehle wo kha chuki thi.",
+      "urdu": "ہمارے پہنچنے سے پہلے وہ کھا چکی تھی۔",
+      "hindi": "हमारे पहुँचने से पहले वह खा चुकी थी।"
+     }
+    },
+    {
+     "en": "He said he had seen the film.",
+     "tr": {
+      "roman_urdu": "Usne kaha ke usne film dekh rakhi thi.",
+      "urdu": "اس نے کہا کہ اس نے فلم دیکھ رکھی تھی۔",
+      "hindi": "उसने कहा कि उसने फिल्म देख रखी थी।"
+     }
+    }
+   ],
+   "practice": "pastperfect",
+   "prompt": "Now write your own sentence, for example: She had already left when I called."
+  }
+ ]
+}

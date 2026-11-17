@@ -1,0 +1,85 @@
+{
+ "_note": "Urdu and Hindi are drafts: native-speaker review needed.",
+ "unit": "a2-u1",
+ "title": "Dagoruna's Yesterday",
+ "lessons": [
+  {
+   "id": "a2-u1-l1",
+   "title": "Dagoruna Played Yesterday",
+   "pose": "running",
+   "sentence": "Dagoruna played football yesterday.",
+   "tr": {
+    "roman_urdu": "Dagoruna ne kal football khela.",
+    "urdu": "ڈیگورونا نے کل فٹ بال کھیلا۔",
+    "hindi": "डेगोरुना ने कल फुटबॉल खेला।"
+   },
+   "parts": [
+    {
+     "w": "Dagoruna",
+     "r": {
+      "roman_urdu": "Subject (kaam karne wala)",
+      "urdu": "Subject (کام کرنے والا)",
+      "hindi": "Subject (काम करने वाला)"
+     }
+    },
+    {
+     "w": "played",
+     "r": {
+      "roman_urdu": "Verb (guzra hua waqt, -ed)",
+      "urdu": "Verb (گزرا ہوا وقت، -ed)",
+      "hindi": "Verb (बीता हुआ समय, -ed)"
+     }
+    },
+    {
+     "w": "football",
+     "r": {
+      "roman_urdu": "Object (cheez)",
+      "urdu": "Object (چیز)",
+      "hindi": "Object (चीज़)"
+     }
+    },
+    {
+     "w": "yesterday",
+     "r": {
+      "roman_urdu": "Waqt",
+      "urdu": "وقت",
+      "hindi": "समय"
+     }
+    }
+   ],
+   "why": {
+    "roman_urdu": "Guzre hue waqt ke kaam ke liye past simple use hota hai. Regular verbs mein -ed lagta hai (play se played). Kuch verbs ki shakal badal jati hai (go se went, eat se ate). Negative aur sawal mein did use hota hai, aur verb apni asal shakal mein rehta hai (did not go).",
+    "urdu": "گزرے ہوئے وقت کے کام کے لیے past simple استعمال ہوتا ہے۔ Regular verbs میں ed لگتا ہے (play سے played)۔ کچھ verbs کی شکل بدل جاتی ہے (go سے went، eat سے ate)۔ Negative اور سوال میں did آتا ہے اور verb اپنی اصل شکل میں رہتا ہے (did not go)۔",
+    "hindi": "बीते हुए समय के काम के लिए past simple इस्तेमाल होता है। Regular verbs में ed लगता है (play से played)। कुछ verbs का रूप बदल जाता है (go से went, eat से ate)। Negative और सवाल में did आता है और verb अपने मूल रूप में रहता है (did not go)।"
+   },
+   "examples": [
+    {
+     "en": "I watched a film last night.",
+     "tr": {
+      "roman_urdu": "Maine kal raat film dekhi.",
+      "urdu": "میں نے کل رات فلم دیکھی۔",
+      "hindi": "मैंने कल रात फिल्म देखी।"
+     }
+    },
+    {
+     "en": "She went to the market.",
+     "tr": {
+      "roman_urdu": "Wo bazaar gayi.",
+      "urdu": "وہ بازار گئی۔",
+      "hindi": "वह बाज़ार गई।"
+     }
+    },
+    {
+     "en": "We ate rice.",
+     "tr": {
+      "roman_urdu": "Humne chawal khaye.",
+      "urdu": "ہم نے چاول کھائے۔",
+      "hindi": "हमने चावल खाए।"
+     }
+    }
+   ],
+   "practice": "past",
+   "prompt": "Now write your own sentence about yesterday, for example: I watched a film last night."
+  }
+ ]
+}

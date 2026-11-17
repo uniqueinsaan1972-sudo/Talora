@@ -1,0 +1,14 @@
+import type { Lang } from "./prefs";
+import a1l from "@content/a1_u1_lessons.json"; import a1t from "@content/a1_u1_tests.public.json";
+import a2l from "@content/a2_u1_lessons.json"; import a2t from "@content/a2_u1_tests.public.json";
+import b1l from "@content/b1_u1_lessons.json"; import b1t from "@content/b1_u1_tests.public.json";
+import b2l from "@content/b2_u1_lessons.json"; import b2t from "@content/b2_u1_tests.public.json";
+import c1l from "@content/c1_u1_lessons.json"; import c1t from "@content/c1_u1_tests.public.json";
+export type Tr = Record<Lang, string>;
+export type Lesson = { id: string; title: string; pose: string; sentence: string; tr: Tr; parts: { w: string; r: Tr }[]; why: Tr; examples: { en: string; tr: Tr }[]; practice: string; prompt: string };
+export type Q = { id: string; type: "mcq" | "fill" | "arrange"; prompt: string; topic?: string; options?: string[]; words?: string[] };
+export type Test = { id: string; title: string; kind: string; questions: Q[] };
+export type Unit = { id: string; level: string; title: string; lessons: Lesson[]; tests: Test[] };
+const mk = (level: string, l: unknown, t: unknown): Unit => { const x = l as { unit: string; title: string; lessons: Lesson[] }; return { id: x.unit, level, title: x.title, lessons: x.lessons, tests: (t as { tests: Test[] }).tests }; };
+export const UNITS: Unit[] = [mk("A1", a1l, a1t), mk("A2", a2l, a2t), mk("B1", b1l, b1t), mk("B2", b2l, b2t), mk("C1", c1l, c1t)];
+export const megaId = (u: Unit) => `${u.id}-mega`;

@@ -1,0 +1,238 @@
+{
+ "unit": "a2-u1",
+ "tests": [
+  {
+   "id": "a2-u1-t1",
+   "title": "Test 1: regular verbs (-ed)",
+   "kind": "test",
+   "questions": [
+    {
+     "id": "a2-u1-t1-q1",
+     "topic": "Regular past (-ed)",
+     "type": "mcq",
+     "prompt": "Dagoruna ___ football yesterday.",
+     "options": [
+      "play",
+      "played",
+      "playing"
+     ]
+    },
+    {
+     "id": "a2-u1-t1-q2",
+     "topic": "Regular past (-ed)",
+     "type": "fill",
+     "prompt": "I ___ English last night. (study)"
+    },
+    {
+     "id": "a2-u1-t1-q3",
+     "topic": "Regular past (-ed)",
+     "type": "mcq",
+     "prompt": "Which is the past of “walk”?",
+     "options": [
+      "walked",
+      "walking",
+      "walks"
+     ]
+    },
+    {
+     "id": "a2-u1-t1-q4",
+     "topic": "Regular past (-ed)",
+     "type": "arrange",
+     "prompt": "Make a sentence.",
+     "words": [
+      "watched",
+      "We",
+      "a",
+      "film"
+     ]
+    },
+    {
+     "id": "a2-u1-t1-q5",
+     "topic": "Regular past (-ed)",
+     "type": "mcq",
+     "prompt": "She ___ the door a minute ago.",
+     "options": [
+      "open",
+      "opened",
+      "opens"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a2-u1-t2",
+   "title": "Test 2: irregular verbs",
+   "kind": "test",
+   "questions": [
+    {
+     "id": "a2-u1-t2-q1",
+     "topic": "Irregular past",
+     "type": "fill",
+     "prompt": "He ___ to school by bus yesterday. (go)"
+    },
+    {
+     "id": "a2-u1-t2-q2",
+     "topic": "Irregular past",
+     "type": "mcq",
+     "prompt": "Past of “eat”?",
+     "options": [
+      "ate",
+      "eated",
+      "eaten"
+     ]
+    },
+    {
+     "id": "a2-u1-t2-q3",
+     "topic": "Irregular past",
+     "type": "fill",
+     "prompt": "We ___ a movie last week. (see)"
+    },
+    {
+     "id": "a2-u1-t2-q4",
+     "topic": "Irregular past",
+     "type": "arrange",
+     "prompt": "Make a sentence.",
+     "words": [
+      "bought",
+      "She",
+      "a",
+      "book"
+     ]
+    },
+    {
+     "id": "a2-u1-t2-q5",
+     "topic": "Irregular past",
+     "type": "mcq",
+     "prompt": "I ___ breakfast at 7 am this morning.",
+     "options": [
+      "have",
+      "had",
+      "has"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a2-u1-t3",
+   "title": "Test 3: did, negatives, questions",
+   "kind": "test",
+   "questions": [
+    {
+     "id": "a2-u1-t3-q1",
+     "topic": "Past negatives and questions",
+     "type": "mcq",
+     "prompt": "I ___ go to school yesterday.",
+     "options": [
+      "didn't",
+      "don't",
+      "not"
+     ]
+    },
+    {
+     "id": "a2-u1-t3-q2",
+     "topic": "Past negatives and questions",
+     "type": "fill",
+     "prompt": "___ you watch TV last night? (Do / Did)"
+    },
+    {
+     "id": "a2-u1-t3-q3",
+     "topic": "Past negatives and questions",
+     "type": "mcq",
+     "prompt": "She didn't ___ the homework.",
+     "options": [
+      "do",
+      "did",
+      "done"
+     ]
+    },
+    {
+     "id": "a2-u1-t3-q4",
+     "topic": "Past negatives and questions",
+     "type": "arrange",
+     "prompt": "Make a sentence.",
+     "words": [
+      "Did",
+      "you",
+      "sleep",
+      "well"
+     ]
+    },
+    {
+     "id": "a2-u1-t3-q5",
+     "topic": "Past negatives and questions",
+     "type": "mcq",
+     "prompt": "Which sentence is correct?",
+     "options": [
+      "He didn't went home.",
+      "He didn't go home."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a2-u1-mega",
+   "title": "Mega Test",
+   "kind": "mega",
+   "questions": [
+    {
+     "id": "a2-u1-mega-q1",
+     "topic": "Regular past (-ed)",
+     "type": "mcq",
+     "prompt": "“Dagoruna ne kal football khela.” means:",
+     "options": [
+      "Dagoruna played football yesterday.",
+      "Dagoruna plays football yesterday.",
+      "Dagoruna play football tomorrow."
+     ]
+    },
+    {
+     "id": "a2-u1-mega-q2",
+     "topic": "Irregular past",
+     "type": "fill",
+     "prompt": "They ___ pizza last night. (eat)"
+    },
+    {
+     "id": "a2-u1-mega-q3",
+     "topic": "Irregular past",
+     "type": "mcq",
+     "prompt": "Which sentence is correct?",
+     "options": [
+      "She goed home.",
+      "She went home."
+     ]
+    },
+    {
+     "id": "a2-u1-mega-q4",
+     "topic": "Past negatives and questions",
+     "type": "fill",
+     "prompt": "He ___ not call me yesterday. (do / did)"
+    },
+    {
+     "id": "a2-u1-mega-q5",
+     "topic": "Regular past (-ed)",
+     "type": "arrange",
+     "prompt": "Make a sentence.",
+     "words": [
+      "last",
+      "I",
+      "Sunday",
+      "visited",
+      "my",
+      "uncle"
+     ]
+    },
+    {
+     "id": "a2-u1-mega-q6",
+     "topic": "Irregular past",
+     "type": "mcq",
+     "prompt": "Past of “make”?",
+     "options": [
+      "maked",
+      "made",
+      "making"
+     ]
+    }
+   ]
+  }
+ ]
+}

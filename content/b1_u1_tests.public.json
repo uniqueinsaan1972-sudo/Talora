@@ -1,0 +1,230 @@
+{
+ "unit": "b1-u1",
+ "tests": [
+  {
+   "id": "b1-u1-t1",
+   "title": "Test 1: have / has + past participle",
+   "kind": "test",
+   "questions": [
+    {
+     "id": "b1-u1-t1-q1",
+     "topic": "have/has + past participle",
+     "type": "mcq",
+     "prompt": "Dagoruna ___ finished his homework.",
+     "options": [
+      "have",
+      "has",
+      "had"
+     ]
+    },
+    {
+     "id": "b1-u1-t1-q2",
+     "topic": "have/has + past participle",
+     "type": "fill",
+     "prompt": "I ___ seen that film. (have / has)"
+    },
+    {
+     "id": "b1-u1-t1-q3",
+     "topic": "have/has + past participle",
+     "type": "mcq",
+     "prompt": "Past participle of “write”?",
+     "options": [
+      "wrote",
+      "written",
+      "writing"
+     ]
+    },
+    {
+     "id": "b1-u1-t1-q4",
+     "topic": "have/has + past participle",
+     "type": "arrange",
+     "prompt": "Make a sentence.",
+     "words": [
+      "have",
+      "They",
+      "arrived"
+     ]
+    },
+    {
+     "id": "b1-u1-t1-q5",
+     "topic": "have/has + past participle",
+     "type": "mcq",
+     "prompt": "She ___ lived here for five years.",
+     "options": [
+      "have",
+      "has",
+      "is"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b1-u1-t2",
+   "title": "Test 2: for, since, already, never, ever",
+   "kind": "test",
+   "questions": [
+    {
+     "id": "b1-u1-t2-q1",
+     "topic": "for / since / already / never",
+     "type": "mcq",
+     "prompt": "I have lived here ___ 2019.",
+     "options": [
+      "for",
+      "since",
+      "during"
+     ]
+    },
+    {
+     "id": "b1-u1-t2-q2",
+     "topic": "for / since / already / never",
+     "type": "mcq",
+     "prompt": "We have known him ___ ten years.",
+     "options": [
+      "for",
+      "since",
+      "from"
+     ]
+    },
+    {
+     "id": "b1-u1-t2-q3",
+     "topic": "for / since / already / never",
+     "type": "fill",
+     "prompt": "She has ___ been to Paris, so she wants to go. (never / ago)"
+    },
+    {
+     "id": "b1-u1-t2-q4",
+     "topic": "for / since / already / never",
+     "type": "mcq",
+     "prompt": "I have ___ finished my work. It is done.",
+     "options": [
+      "already",
+      "yesterday",
+      "last night"
+     ]
+    },
+    {
+     "id": "b1-u1-t2-q5",
+     "topic": "for / since / already / never",
+     "type": "fill",
+     "prompt": "Have you ___ been to Karachi? (ever / ago)"
+    }
+   ]
+  },
+  {
+   "id": "b1-u1-t3",
+   "title": "Test 3: present perfect or past simple?",
+   "kind": "test",
+   "questions": [
+    {
+     "id": "b1-u1-t3-q1",
+     "topic": "Present perfect vs past simple",
+     "type": "mcq",
+     "prompt": "I ___ him yesterday.",
+     "options": [
+      "have seen",
+      "saw"
+     ]
+    },
+    {
+     "id": "b1-u1-t3-q2",
+     "topic": "Present perfect vs past simple",
+     "type": "mcq",
+     "prompt": "I ___ him already.",
+     "options": [
+      "saw",
+      "have seen"
+     ]
+    },
+    {
+     "id": "b1-u1-t3-q3",
+     "topic": "Present perfect vs past simple",
+     "type": "fill",
+     "prompt": "She ___ to Lahore in 2020. (go)"
+    },
+    {
+     "id": "b1-u1-t3-q4",
+     "topic": "Present perfect vs past simple",
+     "type": "mcq",
+     "prompt": "Which is correct?",
+     "options": [
+      "I have eaten dinner last night.",
+      "I ate dinner last night."
+     ]
+    },
+    {
+     "id": "b1-u1-t3-q5",
+     "topic": "Present perfect vs past simple",
+     "type": "mcq",
+     "prompt": "Which is correct?",
+     "options": [
+      "We have just arrived.",
+      "We have just arrive."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b1-u1-mega",
+   "title": "Mega Test",
+   "kind": "mega",
+   "questions": [
+    {
+     "id": "b1-u1-mega-q1",
+     "topic": "have/has + past participle",
+     "type": "mcq",
+     "prompt": "“Maine apna kaam khatam kar liya hai.” means:",
+     "options": [
+      "I have finished my work.",
+      "I finished my work yesterday.",
+      "I am finish my work."
+     ]
+    },
+    {
+     "id": "b1-u1-mega-q2",
+     "topic": "have/has + past participle",
+     "type": "fill",
+     "prompt": "He ___ never eaten sushi. (have / has)"
+    },
+    {
+     "id": "b1-u1-mega-q3",
+     "topic": "for / since / already / never",
+     "type": "mcq",
+     "prompt": "I ___ in this city since 2015.",
+     "options": [
+      "live",
+      "lived",
+      "have lived"
+     ]
+    },
+    {
+     "id": "b1-u1-mega-q4",
+     "topic": "have/has + past participle",
+     "type": "fill",
+     "prompt": "They have ___ the report. (write)"
+    },
+    {
+     "id": "b1-u1-mega-q5",
+     "topic": "for / since / already / never",
+     "type": "arrange",
+     "prompt": "Make a sentence.",
+     "words": [
+      "has",
+      "She",
+      "already",
+      "left"
+     ]
+    },
+    {
+     "id": "b1-u1-mega-q6",
+     "topic": "have/has + past participle",
+     "type": "mcq",
+     "prompt": "Which is correct?",
+     "options": [
+      "She has went home.",
+      "She has gone home."
+     ]
+    }
+   ]
+  }
+ ]
+}
