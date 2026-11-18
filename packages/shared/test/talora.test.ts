@@ -35,3 +35,17 @@ describe("A2-C1 sentence checks", () => {
   it("past perfect", () => { expect(checkPastPerfect("She had already left when I called.").ok).toBe(true); expect(checkPastPerfect("She has left before.").ok).toBe(false); });
   it("future perfect", () => { expect(checkFuturePerfect("By Friday, we will have sent the report.").ok).toBe(true); expect(checkFuturePerfect("They will have signed the contract.").ok).toBe(true); expect(checkFuturePerfect("We will finish by Friday.").ok).toBe(false); expect(checkFuturePerfect("We will have finish it.").ok).toBe(false); });
 });
+import { extractNextAssets, mergeQueue } from "../src";
+describe("offline helpers", () => {
+  it("finds unique next static assets in html", () => expect(extractNextAssets('<script src="/_next/static/chunks/a.js"></script><link href="/_next/static/css/b.css"/>"\\/_next/static/chunks/a.js"')).toEqual(["/_next/static/chunks/a.js", "/_next/static/css/b.css"]));
+  it("does not queue a lesson twice", () => expect(mergeQueue(mergeQueue([], "l1"), "l1")).toEqual(["l1"]));
+});
+import { pickQuestions, categoryScores, strongestWeakest, suggestLevel, pointsChange, ExamQ } from "../src";
+describe("exam logic", () => {
+  const bank: ExamQ[] = Array.from({ length: 48 }, (_, i) => ({ id: `q${i}`, level: Math.floor(i / 8), category: "grammar", type: "mcq", prompt: "p" }));
+  it("picks unique questions near the level", () => { const p = pickQuestions(bank, 2, 20); expect(new Set(p.map(q => q.id)).size).toBe(p.length); expect(p.length).toBe(20); expect(p.every(q => Math.abs(q.level - 2) <= 1)).toBe(true); });
+  it("never asks for more than the pool; mega uses all levels", () => { expect(pickQuestions(bank, 0, 20).length).toBe(16); expect(pickQuestions(bank, -1, 48).length).toBe(48); });
+  it("category scores, strongest and weakest", () => { const by = { vocabulary: { c: 4, t: 4 }, grammar: { c: 1, t: 4 } }; expect(categoryScores(by)[1].percent).toBe(25); expect(strongestWeakest(by)).toEqual({ strongest: "vocabulary", weakest: "grammar" }); expect(strongestWeakest({ vocabulary: { c: 2, t: 4 }, grammar: { c: 2, t: 4 } })).toEqual({ strongest: null, weakest: null }); });
+  it("suggested level needs a real sample", () => { expect(suggestLevel({ "0": { c: 2, t: 2 }, "3": { c: 1, t: 1 } })).toBe(0); expect(suggestLevel({ "0": { c: 2, t: 2 }, "2": { c: 3, t: 4 }, "3": { c: 1, t: 4 } })).toBe(2); });
+  it("change is null without a previous test, else percentage points", () => { expect(pointsChange(70, null)).toBeNull(); expect(pointsChange(70, 55)).toBe(15); expect(pointsChange(40, 55)).toBe(-15); });
+});

@@ -32,3 +32,20 @@ Level locking is enforced by the database only for tests (Test 1 needs the previ
 Level C1 content is mainly grammar with a few workplace examples; the real professional English units (emails, interviews, presentations) are not built.
 Urdu and Hindi text in A2-C1 are drafts needing native review. Test questions were checked for answer consistency by script, but have not been reviewed by an English teacher.
 The congratulations screen is not an official certificate.
+
+## v0.4.2
+Interface translations are a draft (wording needs native review) and cover only the main screens listed in CHANGELOG. Urdu interface text is not laid out right-to-left as a whole page; only lesson text blocks are.
+
+## v0.5.0 status (honest)
+No access to your GitHub repo, Vercel, signing keystore or an Android device: no APK/AAB was built, nothing was deployed or tested on a phone. docs/ANDROID_TWA.md lists the exact steps. Offline mode and RTL layout were only built and served locally, not exercised in a real browser.
+Offline: only app shell and lesson pages work offline. Tests, XP, login, progress charts and sync need internet. A page never opened online or downloaded falls back to the start page. Urdu/Hindi Google Fonts load from Google, so a first offline launch uses system fonts (self-hosting is future work). The service worker runs only in production builds.
+Language: the interface language is saved on the device only. Not yet translated: landing/login page, Word practice, Games, Placement, lesson prompts, error messages, course-path and module-status lists.
+Not built: daily challenge, study-time tracking (daily goal is shown, not measured), reading/writing/listening/speaking lesson types, maskable adaptive icon. No RLS changes in this release.
+
+## v0.6.0 status (honest)
+Run migrations 0006 and 0007 in Supabase before using the Mega Test.
+The question bank has only 48 questions (8 per level; 3 reading and 3 listening in total), so the Mega Test repeats questions across attempts and its level suggestion and skill scores rest on small samples. It is a practice exam, not an official proficiency test. Urdu/Hindi in translation questions are drafts.
+Time taken is measured on the device and sent to the server (not verified by the server). Match-the-words questions, certificates and weekly/monthly charts beyond the 30-day XP chart are not built. "Total learning time", "words learned" and "daily goal progress" are not tracked, so they are not shown as numbers.
+Listening uses the browser's text-to-speech (not recordings); if a device has none, the transcript is shown instead.
+Share and PDF use the device's share sheet and print dialog; not tested on Android.
+NOT built from the TALORA 2.0 prompt: Smart Translator (needs a server-side translation API key, e.g. Google Cloud Translation), Explain This Word, AI assistant (needs a server-side AI API key), the large vocabulary library (thousands of reviewed words with Urdu/Hindi), level C2, expanded A1-C1 content, saved-word collection, achievements and certificates, new APK/AAB, QA report for the whole prompt.

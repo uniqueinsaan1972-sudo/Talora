@@ -183,7 +183,11 @@
       "Dagoruna played football yesterday.",
       "Dagoruna plays football yesterday.",
       "Dagoruna play football tomorrow."
-     ]
+     ],
+     "ptr": {
+      "urdu": "“ڈیگورونا نے کل فٹ بال کھیلا۔” means:",
+      "hindi": "“डेगोरुना ने कल फुटबॉल खेला।” means:"
+     }
     },
     {
      "id": "a2-u1-mega-q2",

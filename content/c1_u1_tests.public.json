@@ -184,7 +184,11 @@
       "By next June, Dagoruna will have completed the course.",
       "Next June Dagoruna completes the course.",
       "Dagoruna had completed the course next June."
-     ]
+     ],
+     "ptr": {
+      "urdu": "“اگلے جون تک ڈیگورونا کورس مکمل کر چکا ہوگا۔” means:",
+      "hindi": "“अगले जून तक डेगोरुना कोर्स पूरा कर चुका होगा।” means:"
+     }
     },
     {
      "id": "c1-u1-mega-q2",

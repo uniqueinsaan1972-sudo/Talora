@@ -179,7 +179,11 @@
       "Dagoruna had finished before the teacher arrived.",
       "Dagoruna has finished before the teacher arrives.",
       "Dagoruna finishes before the teacher arrived."
-     ]
+     ],
+     "ptr": {
+      "urdu": "“استاد کے آنے سے پہلے ڈیگورونا کام ختم کر چکا تھا۔” means:",
+      "hindi": "“शिक्षक के आने से पहले डेगोरुना काम खत्म कर चुका था।” means:"
+     }
     },
     {
      "id": "b2-u1-mega-q2",

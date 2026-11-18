@@ -175,7 +175,11 @@
       "I am studying.",
       "I studying am.",
       "I is studying."
-     ]
+     ],
+     "ptr": {
+      "urdu": "“میں پڑھ رہا ہوں۔” means:",
+      "hindi": "“मैं पढ़ रहा हूँ।” means:"
+     }
     },
     {
      "id": "a1-u1-mega-q2",
@@ -186,7 +190,11 @@
       "Dagoruna go to school.",
       "Dagoruna goes to school.",
       "Dagoruna is school."
-     ]
+     ],
+     "ptr": {
+      "urdu": "“ڈیگورونا اسکول جاتا ہے۔” means:",
+      "hindi": "“डेगोरुना स्कूल जाता है।” means:"
+     }
     },
     {
      "id": "a1-u1-mega-q3",

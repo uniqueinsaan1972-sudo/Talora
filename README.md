@@ -11,7 +11,7 @@ Learn English. Enjoy Every Step. One unified project: web app, Android starter, 
 
 ## Setup
 1. Create a free project at supabase.com.
-2. SQL Editor: run the files in supabase/migrations in order: 0001, 0002, 0003, 0004, 0005 (0004 seeds A1 tests and answer keys, 0005 seeds A2-C1).
+2. SQL Editor: run the files in supabase/migrations in order: 0001 to 0007 (0006 and 0007 add the Mega Test; 0004 seeds A1 tests and answer keys, 0005 seeds A2-C1).
 3. Copy .env.example to apps/web/.env.local. Fill NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY (Project Settings, API). Never put the service-role key in a NEXT_PUBLIC variable.
 4. Web: `cd apps/web && npm install && npm run dev`, open http://localhost:3000
 5. Tests: `cd packages/shared && npm install && npx vitest run`
@@ -34,3 +34,4 @@ Units are /unit/a1-u1, a2-u1, b1-u1, b2-u1, c1-u1. To change A2-C1 content edit 
 2. Node.js Version: 22.x (also set by apps/web/package.json). Install command comes from apps/web/vercel.json (`npm install`), not pnpm.
 3. Environment Variables: NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY. Never add the service-role key.
 4. In Supabase -> Authentication -> URL Configuration, add your Vercel URL as Site URL / redirect URL so email verification links work.
+Mega Test content: edit scripts/gen_exam.py, run `python3 scripts/gen_exam.py`. If 0007 is already applied, put changes in a new migration.

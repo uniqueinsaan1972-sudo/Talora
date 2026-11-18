@@ -177,7 +177,11 @@
       "I have finished my work.",
       "I finished my work yesterday.",
       "I am finish my work."
-     ]
+     ],
+     "ptr": {
+      "urdu": "“میں نے اپنا کام ختم کر لیا ہے۔” means:",
+      "hindi": "“मैंने अपना काम खत्म कर लिया है।” means:"
+     }
     },
     {
      "id": "b1-u1-mega-q2",

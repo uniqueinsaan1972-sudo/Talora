@@ -17,6 +17,16 @@ for (const t of ["a1-u1-t2", "a1-u1-t3", "a1-u1-mega"]) { const r = await sub(t,
 for (const u of ["a2", "b1", "b2", "c1"]) { for (const t of ["t1", "t2", "t3", "mega"]) { const r = await sub(`${u}-u1-${t}`, await keys(`${u}-u1-${t}`)); if (!r.passed) console.log("FAIL", u, t); } console.log("OK  all tests of", u, "pass with their own keys and unlock in order"); }
 const xp = (await db.query(`select coalesce(sum(amount),0)::int s from xp_transactions`)).rows[0].s; console.log("OK  total XP:", xp);
 try { await db.query(`select award_xp('x','y',50)`); console.log("note: award_xp callable by superuser here (expected in pglite)"); } catch (e) {}
+const ek = async ids => Object.fromEntries((await db.query(`select question_id, min(answer) a from exam_keys where question_id = any($1) group by 1`, [ids])).rows.map(r => [r.question_id, r.a]));
+const ids = (await db.query(`select distinct question_id from exam_keys order by 1 limit 10`)).rows.map(r => r.question_id);
+const ex = async (ans, qs = ids, mode = "short") => (await db.query(`select submit_exam($1,$2,$3,$4::jsonb,$5::text[],$6) r`, [mode, 2, true, JSON.stringify(ans), qs, 95])).rows[0].r;
+let e1 = await ex(await ek(ids)); console.log("OK  exam all correct:", e1.percent, "skipped", e1.skipped, "xp", e1.xp, "prev", e1.previous_percent);
+const part = await ek(ids); delete part[ids[0]]; part[ids[1]] = ""; part[ids[2]] = "definitely wrong";
+let e2 = await ex(part); console.log("OK  exam partial:", e2.percent, "% correct", e2.correct, "skipped", e2.skipped, "mistakes", e2.mistakes.length, "prev", e2.previous_percent, "xp", e2.xp, "(10 XP max per day)", "categories:", Object.keys(e2.by_category).join(","));
+try { await ex({}, [ids[0], ids[0], ...ids.slice(2)]); console.log("FAIL duplicate accepted"); } catch (er) { console.log("OK  duplicate questions rejected"); }
+try { await ex({}, [...ids.slice(0, 9), "nope-1"]); console.log("FAIL unknown accepted"); } catch (er) { console.log("OK  unknown question rejected"); }
+try { await ex({}, ids.slice(0, 3)); console.log("FAIL too few accepted"); } catch (er) { console.log("OK  fewer than 5 questions rejected"); }
 await db.exec(`set role authenticated`); try { await db.query(`select award_xp('x','forged',50)`); console.log("FAIL client can call award_xp"); } catch (e) { console.log("OK  client cannot call award_xp directly"); }
+try { await db.query(`select count(*) from exam_keys`); console.log("FAIL client can read exam keys"); } catch (e) { console.log("OK  client cannot read exam_keys"); }
 try { await db.query(`select count(*) from test_keys`); console.log("FAIL client can read answer keys"); } catch (e) { console.log("OK  client cannot read test_keys"); }
 try { const x = await db.query(`select count(*) c from test_keys`); console.log("rows visible to client:", x.rows[0].c); } catch {}
