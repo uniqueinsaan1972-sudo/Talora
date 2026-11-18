@@ -49,3 +49,9 @@ describe("exam logic", () => {
   it("suggested level needs a real sample", () => { expect(suggestLevel({ "0": { c: 2, t: 2 }, "3": { c: 1, t: 1 } })).toBe(0); expect(suggestLevel({ "0": { c: 2, t: 2 }, "2": { c: 3, t: 4 }, "3": { c: 1, t: 4 } })).toBe(2); });
   it("change is null without a previous test, else percentage points", () => { expect(pointsChange(70, null)).toBeNull(); expect(pointsChange(70, 55)).toBe(15); expect(pointsChange(40, 55)).toBe(-15); });
 });
+import { detectLang, validateChat } from "../src";
+describe("assistant helpers", () => {
+  it("detects English, Urdu (script and Roman) and Hindi", () => { expect(detectLang("What is a synonym?")).toBe("en"); expect(detectLang("Synonym kya hota hai?")).toBe("ur"); expect(detectLang("سنونم کیا ہوتا ہے؟")).toBe("ur"); expect(detectLang("Synonym का मतलब क्या होता है?")).toBe("hi"); expect(detectLang("This is the main road")).toBe("en"); });
+  it("accepts a normal chat and a word", () => { const r = validateChat({ messages: [{ role: "user", content: "Explain this word." }], word: { en: "subtle", urdu: "باریک" } }); expect(r.ok && r.word?.en).toBe("subtle"); expect(r.ok && r.lang).toBe("en"); });
+  it("rejects bad input", () => { expect(validateChat({}).ok).toBe(false); expect(validateChat({ messages: [] }).ok).toBe(false); expect(validateChat({ messages: [{ role: "assistant", content: "hi" }] }).ok).toBe(false); expect(validateChat({ messages: [{ role: "user", content: "x".repeat(801) }] }).ok).toBe(false); expect(validateChat({ messages: [{ role: "system", content: "x" }] }).ok).toBe(false); expect(validateChat({ messages: [{ role: "user", content: "hi" }], word: { en: "<script>" } }).ok).toBe(false); });
+});

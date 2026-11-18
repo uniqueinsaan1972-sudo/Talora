@@ -21,7 +21,7 @@ export default function Learn() {
 function Vocab({ lang }: { lang: Lang }) {
   const [q, setQ] = useState(""); const list = words.filter(w => w.en.includes(q.toLowerCase()));
   return (<div className="stack"><input placeholder="Search words" aria-label="Search words" value={q} onChange={e => setQ(e.target.value)} />
-    <div className="grid">{list.map(w => <div className="card" key={w.en}><h3>{w.en}</h3><div className={rtl(lang)}>{w[lang]}</div><small>{w.example}</small></div>)}</div></div>);
+    <div className="grid">{list.map(w => <div className="card" key={w.en}><h3>{w.en}</h3><div className={rtl(lang)}>{w[lang]}</div><small>{w.example}</small><button className="ghost" onClick={() => window.dispatchEvent(new CustomEvent("dagoruna:ask", { detail: { word: { en: w.en, urdu: w.urdu, hindi: w.hindi, example: w.example } } }))}>Ask Dagoruna</button></div>)}</div></div>);
 }
 function Cards({ lang }: { lang: Lang }) {
   const [i, setI] = useState(0); const [back, setBack] = useState(false); const w = words[i];
@@ -29,7 +29,7 @@ function Cards({ lang }: { lang: Lang }) {
   return (<div className="stack"><div className="card flip" role="button" tabIndex={0} onClick={() => setBack(!back)} onKeyDown={e => e.key === "Enter" && setBack(!back)}>
     {back ? <div className={rtl(lang)}>{w[lang]}<br /><small>{w.example}</small></div> : <div>{w.en}<br /><small>Tap to flip</small></div>}</div>
     <div style={{ display: "flex", gap: ".5rem" }}><button className="ghost" onClick={() => go(-1)}>Previous</button><button onClick={() => go(1)}>Next</button><span className="tag">{i + 1} / {words.length}</span></div>
-    <small>Flashcards here do not save review schedules yet (see KNOWN_LIMITATIONS).</small></div>);
+    <button className="ghost" onClick={() => window.dispatchEvent(new CustomEvent("dagoruna:ask", { detail: { word: { en: w.en, urdu: w.urdu, hindi: w.hindi, example: w.example } } }))}>Ask Dagoruna</button><small>Flashcards here do not save review schedules yet (see KNOWN_LIMITATIONS).</small></div>);
 }
 function Quiz({ lang }: { lang: Lang }) {
   const [qs, setQs] = useState<Q[]>(() => makeQuiz(lang)); const [n, setN] = useState(0); const [pick, setPick] = useState<string | null>(null); const [res, setRes] = useState<boolean[]>([]); const [note, setNote] = useState("");

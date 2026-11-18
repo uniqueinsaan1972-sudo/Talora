@@ -26,6 +26,7 @@ let e2 = await ex(part); console.log("OK  exam partial:", e2.percent, "% correct
 try { await ex({}, [ids[0], ids[0], ...ids.slice(2)]); console.log("FAIL duplicate accepted"); } catch (er) { console.log("OK  duplicate questions rejected"); }
 try { await ex({}, [...ids.slice(0, 9), "nope-1"]); console.log("FAIL unknown accepted"); } catch (er) { console.log("OK  unknown question rejected"); }
 try { await ex({}, ids.slice(0, 3)); console.log("FAIL too few accepted"); } catch (er) { console.log("OK  fewer than 5 questions rejected"); }
+for (let n = 1; n <= 3; n++) { try { const r = (await db.query(`select assistant_take_quota(2) n`)).rows[0].n; console.log("OK  assistant quota use", r, "of 2"); } catch (er) { console.log(n === 3 ? "OK  third assistant request blocked: " + er.message : "FAIL quota too early"); } }
 await db.exec(`set role authenticated`); try { await db.query(`select award_xp('x','forged',50)`); console.log("FAIL client can call award_xp"); } catch (e) { console.log("OK  client cannot call award_xp directly"); }
 try { await db.query(`select count(*) from exam_keys`); console.log("FAIL client can read exam keys"); } catch (e) { console.log("OK  client cannot read exam_keys"); }
 try { await db.query(`select count(*) from test_keys`); console.log("FAIL client can read answer keys"); } catch (e) { console.log("OK  client cannot read test_keys"); }
