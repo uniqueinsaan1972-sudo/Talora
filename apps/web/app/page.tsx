@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { supabase, SETUP_MSG } from "../lib/supabase";
 import { usePrefs, TopBar, LANG_NAMES, Lang } from "../lib/prefs";
@@ -8,6 +8,8 @@ export default function Home() {
   const p = usePrefs(); const router = useRouter();
   const [mode, setMode] = useState<"signup" | "login">("signup"); const [msg, setMsg] = useState(""); const [busy, setBusy] = useState(false);
   const [f, setF] = useState({ full_name: "", username: "", email: "", password: "", confirm: "", level: "A0", goal: "", minutes: 10 });
+  const [checking, setChecking] = useState(true);
+  useEffect(() => { if (!supabase) { setChecking(false); return; } supabase.auth.getSession().then(({ data }) => { if (data.session) router.replace("/dashboard"); else setChecking(false); }); }, [router]);
   const set = (k: string, v: string | number) => setF({ ...f, [k]: v });
   async function submit(e: React.FormEvent) {
     e.preventDefault(); setMsg("");
@@ -29,6 +31,7 @@ export default function Home() {
     }
     setBusy(false);
   }
+  if (checking) return (<main className="stack"><div className="skeleton" style={{ height: 56 }} /><div className="skeleton" style={{ height: 260 }} /></main>);
   return (<><TopBar p={p} /><main>
     <section className="hero"><div className="stack"><h1>Learn English. Enjoy Every Step.</h1>
       <p>Short games, clear explanations in Roman Urdu, Urdu or Hindi, and no shame for wrong answers. Meet Dagoruna, your dragon guide.</p>

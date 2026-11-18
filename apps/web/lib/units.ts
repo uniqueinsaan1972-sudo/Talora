@@ -6,7 +6,7 @@ import b2l from "@content/b2_u1_lessons.json"; import b2t from "@content/b2_u1_t
 import c1l from "@content/c1_u1_lessons.json"; import c1t from "@content/c1_u1_tests.public.json";
 export type Tr = Record<Lang, string>;
 export type Lesson = { id: string; title: string; pose: string; sentence: string; tr: Tr; parts: { w: string; r: Tr }[]; why: Tr; examples: { en: string; tr: Tr }[]; practice: string; prompt: string };
-export type Q = { id: string; type: "mcq" | "fill" | "arrange"; prompt: string; topic?: string; options?: string[]; words?: string[] };
+export type Q = { id: string; type: "mcq" | "fill" | "arrange"; prompt: string; topic?: string; ptr?: Partial<Record<Lang, string>>; options?: string[]; words?: string[] };
 export type Test = { id: string; title: string; kind: string; questions: Q[] };
 export type Unit = { id: string; level: string; title: string; lessons: Lesson[]; tests: Test[] };
 const mk = (level: string, l: unknown, t: unknown): Unit => { const x = l as { unit: string; title: string; lessons: Lesson[] }; return { id: x.unit, level, title: x.title, lessons: x.lessons, tests: (t as { tests: Test[] }).tests }; };
